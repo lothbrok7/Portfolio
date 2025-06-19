@@ -32,17 +32,14 @@
         }
 
         .navlinks>button {
-            
             border: none;
             background-color: transparent;
-            
             width: 120px;
         }
 
         .custom-button {
             width: 150px;
             height: 150px;
-        
             border: none;
             border-radius: 50%;
             font-weight: 600;
@@ -84,17 +81,30 @@
             cursor: pointer;
             border: 1px solid aqua;
         }
-        a{
+
+        a {
             text-decoration: none;
             color: grey;
-
         }
-        a:hover{
-            color:black;
+
+        a:hover {
+            color: black;
         }
-    </style>
 
+        @media (max-width: 768px) {
+            .custom-button {
+                width: 100px;
+                height: 100px;
+                font-size: 14px;
+            }
 
+            .navlinks {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+        }
     </style>
 </head>
 
@@ -103,12 +113,11 @@
     <!-- Header with Navigation -->
     <nav class="navbar navbar-expand-lg bg-light border-bottom py-3">
         <div class="container">
-            <a class="navbar-brand fw-bold"  ><b>Y</b>ashwant</a>
+            <a class="navbar-brand fw-bold"><b>Y</b>ashwant</a>
             <span class="navbar-text me-auto">Web Developer</span>
             <div>
-                <div class="navlinks">
+                <div class="navlinks d-flex flex-wrap gap-2">
                     <button><a href="assets/Yashwant Kumar.pdf" download="Yashwant Kumar.pdf">Resume</a></button>
-
                     <button id="mark"><a href="projects.html">Projects</a></button>
                     <button><a href="https://forms.gle/YQkCSvNx2WTT6FHQ8">Contact</a></button>
                 </div>
@@ -118,51 +127,42 @@
 
     <!-- Main Content Section -->
     <main class="container my-5">
-        <div class="row" style="margin-top: 100px;">
-            <div class="col-md-6 mb-4">
-                <img style="float: inline-end;
-        height: 450px;
-        border-radius: 50%;" src="assets/pic.jpg" alt="logo">
+        <div class="row align-items-center gy-4">
+            <div class="col-12 col-md-6 text-center">
+                <img style="height: 400px; max-width: 100%; border-radius: 50%;" src="assets/pic.jpg" alt="logo">
             </div>
 
-
-            <!-- Right Column -->
-            <div class="col-md-5  ">
-                <div class="col mx-auto  mb-4 " style="margin-top: 5rem;">
+            <div class="col-12 col-md-6">
+                <div class="mb-4 text-center text-md-start">
                     <h1>Hello <b>W</b>orld!</h1>
-                    <p>Enthusiastic developer with expertise in HTML, CSS, JavaScript, React, bootstrap etc. Skilled in
-                        creating efficient, scalable, and user-friendly solutions. Passionate about real-world projects
-                        and continuous
-                        learning in modern technologies. </p>
-                </div>
-                <!-- <h4>My Work</h4> -->
-                <div class="container mt-5">
-                    <div class="row g-3">
-                        <div class="col-md-3">
-                            <button class="custom-button btn-yellow"><a href="assets/Yashwant Kumar.pdf" download="Yashwant Kumar.pdf">Resume</a></button>
-                        </div>
-                        <div class="col-md-3">
-                            <button class="custom-button btn-orange"><a href="projects.html">Projects</a></button>
-                        </div>
-                        <div class="col-md-3">
-                            <button class="custom-button btn-aqua"><a href="https://forms.gle/YQkCSvNx2WTT6FHQ8">Contact</a></button>
-                        </div>
-                    </div>
+                    <p>
+                        Enthusiastic developer with expertise in HTML, CSS, JavaScript, React, Bootstrap etc. Skilled
+                        in creating efficient, scalable, and user-friendly solutions. Passionate about real-world
+                        projects and continuous learning in modern technologies.
+                    </p>
                 </div>
 
+                <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
+                    <button class="custom-button btn-yellow"><a href="assets/Yashwant Kumar.pdf"
+                            download="Yashwant Kumar.pdf">Resume</a></button>
+                    <button class="custom-button btn-orange"><a href="projects.html">Projects</a></button>
+                    <button class="custom-button btn-aqua"><a
+                            href="https://forms.gle/YQkCSvNx2WTT6FHQ8">Contact</a></button>
+                </div>
             </div>
+        </div>
     </main>
 
     <!-- Footer -->
     <footer class="bg-light py-4 border-top">
         <div class="container text-center d-flex">
-            <div class="phone mx-auto ">
+            <div class="phone mx-auto">
                 <h5><u>Phone</u></h5>
                 <p><a href="tel:+91">7753980425</a></p>
             </div>
-            <div class="email mx-auto ">
+            <div class="email mx-auto">
                 <h5><u>Email</u></h5>
-                <p><a href="mailto:">Yashwantkumar73002@gmail.com</a></p>
+                <p><a href="mailto:Yashwantkumar73002@gmail.com">Yashwantkumar73002@gmail.com</a></p>
             </div>
             <div class="follow mx-auto">
                 <h5><u>Follow Me</u></h5>
@@ -174,4 +174,5 @@
     </footer>
 
 </body>
+
 </html>
